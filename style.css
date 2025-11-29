@@ -143,32 +143,37 @@ body {
     object-fit: cover;
     box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
-.skill-item {
+/* YETENEK ve PROJE KARTLARINI ORTALA + TAŞMAYI DÜZELT */
+
+.skills-grid,
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* ortalar */
+    gap: 15px;
+}
+
+/* Ortadaki kutular */
+.skill-card,
+.project-card {
+    width: 100%;
+    max-width: 900px;                  /* sağdan taşmayı engeller */
+    margin: 0 auto;                    /* ortaya alır */
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.25);
     padding: 18px 25px;
-    margin-bottom: 15px;
+    box-sizing: border-box;            /* padding yüzünden taşmayı engeller */
     backdrop-filter: blur(5px);
     transition: 0.3s;
 }
 
-.skill-item:hover {
+/* Hover efekti */
+.skill-card:hover,
+.project-card:hover {
     transform: translateY(-4px);
     background: rgba(255, 255, 255, 0.35);
 }
-.project-card {
-    border-radius: 25px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.22);
-    backdrop-filter: blur(5px);
-    transition: 0.3s;
-}
 
-.project-card:hover {
-    transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.32);
-}
 section div {
     max-width: 900px;      /* genişlik sınırı */
     width: 90%;            /* mobil uyumlu */
