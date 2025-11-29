@@ -1,213 +1,42 @@
+/* GENEL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* MATRIX CANVAS ARKA PLAN */
 #matrix {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* arkaya gönderiyoruz */
+    z-index: 0;
     pointer-events: none;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ÖNDEKİ SAYFA */
+.page-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
 }
-body {
-    margin: 0;
-    font-family: 'Outfit', sans-serif;
-    background: linear-gradient(120deg, #ff89c9, #ff4fb2, #ff98d6, #ffc2e8);
-    background-size: 300% 300%;
-    animation: hareketliPembe 6s ease-in-out infinite;
-    color: #ffffff;
-}
-
-@keyframes hareketliPembe {
-    0% { background-position: 0% 50%; }
-    25% { background-position: 50% 100%; }
-    50% { background-position: 100% 50%; }
-    75% { background-position: 50% 0%; }
-    100% { background-position: 0% 50%; }
-}
-
-
-
-
-
 
 /* NAVBAR */
-.header {
-    background: transparent;
-    padding: 1.5rem 0 2rem;
-}
-
 .navbar {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 1.5rem 1rem;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: #2b0640;
-    text-decoration: none;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #4b0f6e;
-    font-size: 0.95rem;
-}
-
-/* HERO */
-.hero {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-.hero-content .greeting {
-    color: #ec4899;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 0.1em;
-}
-
-.hero-content h1 {
-    font-size: 2.2rem;
-    margin: 0.5rem 0;
-}
-
-.hero-content .title {
-    color: #7b1e7a;
-    margin-bottom: 1rem;
-}
-
-.social-links a {
-    margin-right: 0.75rem;
-    font-size: 1.2rem;
-    color: #2b0640;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.6rem 1.4rem;
-    border-radius: 999px;
-    background: #ec4899;   /* pembe buton */
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-/* BÖLÜMLER */
-.section {
-    padding: 3rem 1rem;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.section-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #2b0640;
-}
-
-/* KUTULAR – MOR ARKA PLAN, BEYAZ YAZI */
-.projects-grid,
-.skills-grid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.skill-card,
-.project-card {
-    background: #3b0764;   /* koyu mor */
-    color: #ffffff;        /* beyaz yazı */
-    padding: 1.5rem;
-    border-radius: 0.75rem;
-    box-shadow: 0 10px 25px rgba(88, 28, 135, 0.35);
-}
-
-.skill-card h3,
-.project-card h3 {
-    margin-bottom: 0.5rem;
-    color: #fff;
-}
-
-/* FOOTER */
-.footer {
-    text-align: center;
-    padding: 1rem 0 2rem;
-    background: rgba(59, 7, 100, 0.2);
-    font-size: 0.85rem;
-    color: #2b0640;
-}
-
-/* MOBİL MENÜ */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 4px;
-    cursor: pointer;
-}
-
-.hamburger .bar {
-    width: 20px;
-    height: 2px;
-    background: #2b0640;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        right: 1rem;
-        top: 3.5rem;
-        background: #ec4899;
-        padding: 1rem 1.5rem;
-        flex-direction: column;
-        gap: 1rem;
-        border-radius: 0.75rem;
-    }
-
-    .nav-links a {
-        color: #fff;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-    .profile-photo {
-    width: 240px;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 6px solid #ff8ac6; /* pembe çerçeve */
-    box-shadow: 0 0 25px rgba(255, 105, 180, 0.4);
-}
-
-}
-
+    font-size: 1.4rem;
+    fo
