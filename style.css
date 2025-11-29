@@ -1,0 +1,172 @@
+/* GENEL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+/* NAVBAR */
+.header {
+    background: #020617;
+    padding: 1rem 0 2rem;
+}
+
+.navbar {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cbd5f5;
+    font-size: 0.95rem;
+}
+
+/* HERO */
+.hero {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.hero-content .greeting {
+    color: #38bdf8;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+    margin: 0.5rem 0;
+}
+
+.hero-content .title {
+    color: #cbd5f5;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    margin-right: 0.75rem;
+    font-size: 1.2rem;
+    color: #e5e7eb;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* BÖLÜMLER */
+.section {
+    padding: 3rem 1rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* PROJELER & YETENEKLER */
+.projects-grid,
+.skills-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.skill-card,
+.project-card {
+    background: #1e293b;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.skill-card i,
+.project-card i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 1rem 0 2rem;
+    background: #020617;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+/* MOBİL MENÜ */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 20px;
+    height: 2px;
+    background: #e5e7eb;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 1rem;
+        top: 3.5rem;
+        background: #020617;
+        padding: 1rem 1.5rem;
+        flex-direction: column;
+        gap: 1rem;
+        border-radius: 0.75rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
