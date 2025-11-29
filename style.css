@@ -169,6 +169,12 @@ body {
     transform: translateY(-4px);
     background: rgba(255, 255, 255, 0.32);
 }
+section div {
+    max-width: 900px;      /* genişlik sınırı */
+    width: 90%;            /* mobil uyumlu */
+    margin: 15px auto;     /* ortaya al */
+    box-sizing: border-box;
+}
 
     
   
