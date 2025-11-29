@@ -1,28 +1,34 @@
+// PEMBE MATRIX 01 YAĞMURU
 const canvas = document.getElementById('matrix');
 const ctx = canvas.getContext('2d');
 
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+function boyutAyarla() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
 
-const katmanlar = "01";
-const fontSize = 16;
+boyutAyarla();
+window.addEventListener('resize', boyutAyarla);
+
+const karakterler = "01";
+const fontSize = 17;
 const sütun = canvas.width / fontSize;
+const damlalar = [];
 
-let damlalar = [];
-
-for (let x = 0; x < sütun; x++) {
-    damlalar[x] = 1;
+for (let i = 0; i < sütun; i++) {
+    damlalar[i] = Math.random() * canvas.height;
 }
 
 function çiz() {
-    ctx.fillStyle = "rgba(0, 0, 0, 0.05)"; 
+    ctx.fillStyle = "rgba(0,0,0,0.07)";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    ctx.fillStyle = "#ff66c4"; /* PEMBE YAĞMUR */
+    ctx.fillStyle = "#ff66c4";
     ctx.font = fontSize + "px monospace";
 
     for (let i = 0; i < damlalar.length; i++) {
-        const text = katmanlar.charAt(Math.floor(Math.random() * katmanlar.length));
+
+        const text = karakterler.charAt(Math.floor(Math.random() * karakterler.length));
         ctx.fillText(text, i * fontSize, damlalar[i] * fontSize);
 
         if (damlalar[i] * fontSize > canvas.height && Math.random() > 0.975) {
@@ -33,9 +39,4 @@ function çiz() {
     }
 }
 
-setInterval(çiz, 33);
-
-window.onresize = () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-};
+setInterval(çiz, 35);
