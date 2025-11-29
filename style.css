@@ -228,6 +228,18 @@ nav ul li a:hover {
     text-shadow: 0 0 8px rgba(255,255,255,0.6),
                  0 0 15px rgba(255,100,200,0.6);
 }
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.contact-social a {
+    margin-right: 12px;
+    font-size: 18px;
+}
+
 
     
   
