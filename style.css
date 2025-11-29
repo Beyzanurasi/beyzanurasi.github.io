@@ -6,15 +6,19 @@
 }
 
 body {
-   font-family: "Outfit", sans-serif;
-    background: #ffb3d9; 
-    color: #4b006e; 
+  body {
+    font-family: "Outfit", sans-serif;
+    background: linear-gradient(135deg, #ffc2e0, #ff8ac6);
+    color: #4b006e;
+}
+
+
 }
 }
 
 /* NAVBAR */
 .header {
-    background: #020617;
+   background: #ff8ac6;
     padding: 1rem 0 2rem;
 }
 
@@ -85,8 +89,8 @@ body {
     margin-top: 1rem;
     padding: 0.6rem 1.4rem;
     border-radius: 999px;
-    background: #38bdf8;
-    color: #0f172a;
+    background: #ff4fa3;
+    color: white;
     text-decoration: none;
     font-weight: 600;
 }
