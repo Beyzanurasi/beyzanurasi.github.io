@@ -6,9 +6,10 @@
 }
 
 body {
-    font-family: "Outfit", sans-serif;
-    background: #0f172a;
-    color: #e5e7eb;
+   font-family: "Outfit", sans-serif;
+    background: #ffb3d9; 
+    color: #4b006e; 
+}
 }
 
 /* NAVBAR */
@@ -169,4 +170,13 @@ body {
     .hamburger {
         display: flex;
     }
+    .profile-photo {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f472b6; /* pembe çerçeve */
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.4);
+}
+
 }
