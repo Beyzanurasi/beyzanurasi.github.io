@@ -184,7 +184,50 @@ section div {
 .project-card {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
+.profile-photo {
+    width: 260px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.35),
+                0 0 40px rgba(255, 50, 150, 0.35);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
 
+.profile-photo:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.45),
+                0 0 50px rgba(255, 90, 180, 0.55);
+}
+.section-title {
+    text-shadow: 0 0 6px rgba(255,255,255,0.4),
+                 0 0 12px rgba(180,0,150,0.4);
+}
+.project-card {
+    background: rgba(255,255,255,0.18);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 18px rgba(255, 150, 200, 0.45);
+}
+.skill-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 22px rgba(255, 200, 255, 0.5),
+                0 0 40px rgba(255, 140, 200, 0.4);
+}
+nav ul li a {
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255,255,255,0.6),
+                 0 0 15px rgba(255,100,200,0.6);
+}
 
     
   
