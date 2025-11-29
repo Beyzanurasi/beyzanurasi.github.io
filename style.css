@@ -4,22 +4,25 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    background: linear-gradient(-45deg, #ffc2e0, #ff8ac6, #ffb3d9, #ffd1ec);
-    background-size: 400% 400%;
-    animation: pembe-animasyon 10s ease infinite;
     margin: 0;
-    padding: 0;
     font-family: 'Outfit', sans-serif;
-    color: #333;
+    background: linear-gradient(120deg, #ff89c9, #ff4fb2, #ff98d6, #ffc2e8);
+    background-size: 300% 300%;
+    animation: hareketliPembe 6s ease-in-out infinite;
+    color: #ffffff;
 }
 
-@keyframes pembe-animasyon {
+@keyframes hareketliPembe {
     0% { background-position: 0% 50%; }
+    25% { background-position: 50% 100%; }
     50% { background-position: 100% 50%; }
+    75% { background-position: 50% 0%; }
     100% { background-position: 0% 50%; }
 }
+
+
+
 
 
 
