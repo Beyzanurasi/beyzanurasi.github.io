@@ -180,6 +180,11 @@ section div {
     margin: 15px auto;     /* ortaya al */
     box-sizing: border-box;
 }
+.skill-card,
+.project-card {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
 
     
   
