@@ -177,5 +177,14 @@ body {
     .hamburger {
         display: flex;
     }
+    .profile-photo {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ff8ac6; /* pembe çerçeve */
+    box-shadow: 0 0 25px rgba(255, 105, 180, 0.4);
+}
+
 }
 
