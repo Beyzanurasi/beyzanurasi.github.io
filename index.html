@@ -1,54 +1,140 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Beyza Nur Asi | Bilgisayar Mühendisliği Öğrencisi</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Arka planda 01 Matrix Yağmuru */
+        #matrix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.2; /* Daha soft görünüm */
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- ARKA PLAN MATRIX YAĞMURU -->
+    <!-- MATRIX CANVAS -->
     <canvas id="matrix"></canvas>
 
-    <!-- ÖNDEKİ ASIL SAYFA -->
-    <div class="page-content">
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Beyza Nur Asi</a>
 
-        <header class="header">
-            <nav class="navbar">
-                <a href="#" class="logo">Beyza Nur Asi</a>
+            <ul class="nav-links">
+                <li><a href="#hakkimda">Hakkımda</a></li>
+                <li><a href="#egitim">Eğitim</a></li>
+                <li><a href="#yetenekler">Yetenekler</a></li>
+                <li><a href="#projeler">Projeler</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
 
-                <ul class="nav-links">
-                    <li><a href="#hakkimda">Hakkımda</a></li>
-                    <li><a href="#egitim">Eğitim</a></li>
-                    <li><a href="#yetenekler">Yetenekler</a></li>
-                    <li><a href="#projeler">Projeler</a></li>
-                    <li><a href="#iletisim">İletişim</a></li>
-                </ul>
+        <div class="hero">
+            <div class="hero-content">
+                <span class="greeting">Merhaba, ben</span>
+                <h1>Beyza Nur Asi</h1>
+                <p class="title">Bilgisayar Mühendisliği Öğrencisi</p>
 
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/beyza-nur-asi-38a570343"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/beyzanurasi"><i class="fab fa-github"></i></a>
+                    <a href="mailto:beyzanurasi4048@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
-            </nav>
 
-            <div class="hero">
+                <a href="#iletisim" class="btn">İletişime Geç</a>
+            </div>
 
-                <div class="hero-content">
-                    <span class="greeting">Merhaba, ben</span>
-                    <h1>Beyza Nur Asi</h1>
-                    <p class="title">Bilgisayar Mühendisliği Öğrencisi | Siber Güvenlik & Yazılım</p>
+            <div class="hero-image">
+                <img src="profile.png" class="profile-photo" alt="Beyza Nur Asi Profil Fotoğrafı">
+            </div>
+        </div>
+    </header>
 
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/beyza-nur-asi-38a570343" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/beyzanurasi" target="_blank"><i class="fab fa-github"></i></a>
+    <!-- HAKKIMDA -->
+    <section id="hakkimda" class="section">
+        <div class="container">
+            <h2 class="section-title">Hakkımda</h2>
+            <p>
+                Fırat Üniversitesi'nde Bilgisayar Mühendisliği 2. sınıf öğrencisiyim.
+                Yazılım geliştirme ve siber güvenlik alanlarına ilgi duyuyorum.
+                Kendimi sürekli geliştirmeyi ve yeni teknolojiler öğrenmeyi hedefliyorum.
+            </p>
+        </div>
+    </section>
+
+    <!-- EĞİTİM -->
+    <section id="egitim" class="section">
+        <div class="container">
+            <h2 class="section-title">Eğitim</h2>
+            <p><strong>Fırat Üniversitesi</strong><br>
+                Bilgisayar Mühendisliği – 2. Sınıf (Devam Ediyor)</p>
+        </div>
+    </section>
+
+    <!-- YETENEKLER -->
+    <section id="yetenekler" class="section">
+        <div class="container">
+            <h2 class="section-title">Yetenekler & Sertifikalar</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-java"></i> Java – Orta Seviye</div>
+                <div class="skill-card"><i class="fab fa-python"></i> Python – Başlangıç</div>
+                <div class="skill-card"><i class="fab fa-linux"></i> Linux – Sertifikalı</div>
+                <div class="skill-card"><i class="fas fa-shield-alt"></i> Siber Güvenlik – İlgi Alanı</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJELER -->
+    <section id="projeler" class="section">
+        <div class="container">
+            <h2 class="section-title">Projeler & Çalışmalar</h2>
+
+            <div class="projects-grid">
+                <div class="project-card">Siber Kit Yapımı</div>
+                <div class="project-card">Deepfake Video Tespiti</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section id="iletisim" class="section">
+        <div class="container">
+            <h2 class="section-title">İletişim</h2>
+            <a href="mailto:beyzanurasi4048@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i> beyzanurasi4048@gmail.com
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Beyza Nur Asi. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
 
