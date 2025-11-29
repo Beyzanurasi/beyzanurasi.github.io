@@ -90,10 +90,12 @@ body {
 
 /* PROFİL FOTOĞRAF */
 .profile-photo {
-    width: 250px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(255,0,140,0.5);
+    width: 260px;
+    border-radius: 30px; /* köşeleri tatlı yuvarlak */
+    box-shadow: 0px 8px 25px rgba(255, 0, 130, 0.4);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
 
 /* BÖLÜM BAŞLIKLARI */
 .section-title {
