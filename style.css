@@ -240,6 +240,22 @@ nav ul li a:hover {
     margin-right: 12px;
     font-size: 18px;
 }
+/* MOBİLDE PROFİL FOTOYU ZORLA YUVARLAK YAP */
+@media (max-width: 768px) {
+
+    .hero-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image img,
+    img.profile-photo {
+        width: 160px !important;
+        height: 160px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+    }
+}
 
 
     
